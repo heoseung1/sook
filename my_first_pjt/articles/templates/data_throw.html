@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>데이터 페이지</h1>
+<form action = "/data_catch/" method="GET">
+    <!-- 액션은 어디로 메쏘드는 어느 방식으로 전송할지 -->
+    <!-- 빈 문자열이라면 현재 주소로 다시 데이터를 보내준다 -->
+    <label for ="message">데이터 입력 </label>
+    <input type="text" id ="message" name ="message">
+    <!-- name 속성은 데이터를 어디론가 전송해주는 속성 -->
+    <button type="submit">전송</button>
+
+</form>
+{% endblock content %}
